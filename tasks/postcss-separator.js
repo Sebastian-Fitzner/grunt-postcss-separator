@@ -2,9 +2,8 @@
 
 module.exports = function (grunt) {
 	var pkg = require('../package.json');
-	pkg.name = pkg.name.replace(/-/g, '_');
 
-	grunt.registerMultiTask('separator', pkg.description, function () {
+	grunt.registerMultiTask('postcssSeparator', pkg.description, function () {
 		var fs = require('fs-extra');
 		var separator = require('postcss-separator');
 
