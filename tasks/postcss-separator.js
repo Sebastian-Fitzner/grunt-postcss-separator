@@ -15,7 +15,8 @@ module.exports = function (grunt) {
 				matchProp: false, // The RegExp to match rules with
 				matchRule: false, // The RegExp to match rules with
 				matchMedia: false, // The RegExp to match media queries with
-				matchParent: true // Rules (eg. in @media blocks) include their parent node.
+				matchParent: true, // Rules (eg. in @media blocks) include their parent node.
+				matchAtRuleType: false // Rules (eg. in @media print)
 			}
 		});
 

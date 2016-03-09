@@ -62,6 +62,20 @@ module.exports = function (grunt) {
 				files: {
 					'tmp/image.css': ['source.css']
 				}
+			},
+			print: {
+				options: {
+					pattern: {
+						matchValue: false, // The RegExp to match values with
+						matchRule: false, // The RegExp to match values with
+						matchMedia: false, // The RegExp to match media queries with
+						matchParent: false, // Rules (eg. in @media blocks) include their parent node.
+						matchAtRuleType: /print/ // Rules (eg. in @media blocks) include their parent node.
+					}
+				},
+				files: {
+					'tmp/print.css': ['source.css']
+				}
 			}
 		}
 	});

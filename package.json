@@ -1,6 +1,6 @@
 {
 	"name": "grunt-postcss-separator",
-	"version": "0.1.1",
+	"version": "1.0.0",
 	"description": "Split up your Data-URI (or anything else) into a separate CSS file.",
 	"homepage": "https://github.com/Sebastian-Fitzner/grunt-postcss-separatort",
 	"repository": "https://github.com/Sebastian-Fitzner/grunt-postcss-separatort",
@@ -45,7 +45,7 @@
 		"icons"
 	],
 	"dependencies": {
-		"postcss-separator": "~0.1.0",
+		"postcss-separator": "~1.0.0",
 		"fs-extra": "~0.16.5"
 	}
 }

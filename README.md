@@ -83,6 +83,7 @@ Here are some grunt examples:
 - `prop` task splits up a specific property (`background-image`)
 - `ie` task splits up all ie classes (`.lt-ie9`)
 - `mediaQuery` task splits up all media queries which match the RegExp
+- `print` task splits up all @media print
 
 
 ``` js
@@ -137,6 +138,20 @@ separator: {
 		},
 		files: {
 			'tmp/image.css': ['test/fixtures/source.css']
+		}
+	},
+	print: {
+		options: {
+			pattern: {
+				matchValue: false, // The RegExp to match values with
+				matchRule: false, // The RegExp to match values with
+				matchMedia: false, // The RegExp to match media queries with
+				matchParent: false, // Rules (eg. in @media blocks) include their parent node.
+				matchAtRuleType: /print/ // Rules (eg. in @media blocks) include their parent node.
+			}
+		},
+		files: {
+			'tmp/print.css': ['source.css']
 		}
 	}
 }
